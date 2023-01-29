@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const Home = () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen' name='home'>
         <div className='flex flex-col gap-2 mx-auto h-full justify-center md:px-20'>
             <h1 className='text-red-100 text-sm'>Hi, my name is <br />
                 <span className='text-5xl font-semibold text-green-400'> Nithin</span>,<br />

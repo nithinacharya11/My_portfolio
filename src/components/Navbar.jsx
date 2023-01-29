@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaGithub, FaLinkedin, FaTimes, FaTwitter } from 'react-icons/fa';
-import Logo from '../assets/profile_photo.jpg'
+import Logo from '../assets/logo.png';
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -11,26 +12,56 @@ const Navbar = () => {
   
   return (
     <div className='flex justify-between items-center'>
-        <div className='w-10'>
-            <img src={Logo} alt="Logo" className='rounded-full'/>
+        <div className='w-24'>
+            <img src={Logo} alt="Logo"/>
         </div>
-        <ul className='hidden md:flex gap-8'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <ul className='hidden md:flex gap-8 cursor-pointer'>
+            <li className='hover:scale-110 duration-300'>
+              <Link to="home"smooth={true} duration={500}>
+               Home
+              </Link>
+            </li>
+            <li className='hover:scale-110 duration-300'>
+              <Link to="about"smooth={true} duration={500}>
+               About
+              </Link>
+            </li>
+            <li className='hover:scale-110 duration-300'>
+              <Link to="skills"smooth={true} duration={500}>
+               Skills
+              </Link>
+            </li>
+            <li className='hover:scale-110 duration-300'>
+              <Link to="projects"smooth={true} duration={500}>
+               Projects
+              </Link>
+            </li>
+            <li className='hover:scale-110 duration-300'>
+              <Link to="contact"smooth={true} duration={500}>
+               Contact
+              </Link>
+            </li>
         </ul>
-        <div className='md:hidden z-10' onClick={handleClick}>
+        <div className='md:hidden z-10 cursor-pointer' onClick={handleClick}>
             {nav ? <FaTimes/>:<FaBars/>}
         </div>
         {/* mobile nav */}
-        <ul className={nav ? 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center gap-10 bg-[#000300]': 'hidden'}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <ul className={nav ? 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center gap-10 bg-[#000300] cursor-pointer': 'hidden'}>
+            <li className='hover:scale-110 duration-300'><Link onClick={handleClick} to="home"smooth={true} duration={500}>
+               Home
+              </Link></li>
+            <li className='hover:scale-110 duration-300'><Link onClick={handleClick} to="about"smooth={true} duration={500}>
+               About
+              </Link></li>
+            <li className='hover:scale-110 duration-300'><Link onClick={handleClick} to="skills"smooth={true} duration={500}>
+               Skills
+              </Link></li>
+            <li className='hover:scale-110 duration-300'><Link onClick={handleClick} to="projects"smooth={true} duration={500}>
+               Projects
+              </Link></li>
+            <li className='hover:scale-110 duration-300'><Link onClick={handleClick} to="contact"smooth={true} duration={500}>
+               Contact
+              </Link></li>
         </ul>
         {/* social icons */}
         <div className='hidden lg:flex fixed flex-col left-0 top-[35%] gap-0'>
