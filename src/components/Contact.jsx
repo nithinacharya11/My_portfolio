@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 const Contact = () => {
   return (
-    <div className='w-full h-screen flex justify-center items-center' name='contact'>
+    <div className='w-full h-screen flex flex-col justify-center items-center' name='contact'>
       <form method='POST' action='https://getform.io/f/3470a685-4dc2-46ba-8cc4-e03b7d9c3ed4'>
         <div className='p-3'>
             <p className='w-fit mb-2 text-2xl border-b-2 md:text-4xl font-semibold text-purple-500'>Contact</p>
@@ -15,6 +17,29 @@ const Contact = () => {
             <button type='submit' className='bg-blue-800 w-fit mx-auto px-4 py-2 rounded hover:scale-110 duration-300'>Send</button>
         </div>
       </form>
+      <div className='mt-20 flex gap-10 md:hidden'>
+            <ul>
+                <li className='bg-[#0A66C2] p-2 rounded hover:scale-110 duration-300'>
+                    <a href="https://www.linkedin.com/in/nithin-p-874361153/" target='_blank' className='flex justify-around items-center w-full gap-2'>
+                        LinkedIn <FaLinkedin size={20}/>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li className=' bg-[#161B22] p-2 rounded hover:scale-110 duration-300'>
+                    <a href="https://github.com/nithinacharya11" target="_blank" className='flex justify-around items-center w-full gap-2'>
+                        Github <FaGithub size={20}/>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li className=' bg-[#1A8CD8] p-2 rounded hover:scale-110 duration-300'>
+                    <a href='https://twitter.com/nithin1503' target='_blank' className='flex justify-around items-center w-full gap-2'>
+                        Twitter <FaTwitter size={20}/>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
   )
 }

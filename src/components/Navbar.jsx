@@ -64,24 +64,24 @@ const Navbar = () => {
               </Link></li>
         </ul>
         {/* social icons */}
-        <div className='hidden lg:flex fixed flex-col left-0 top-[35%] gap-0'>
+        <div className='hidden md:flex fixed flex-col left-0 top-[35%] gap-0'>
             <ul>
                 <li className='w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2] '>
-                    <a href="/" className='flex justify-around items-center w-full gap-2'>
+                    <a href="https://www.linkedin.com/in/nithin-p-874361153/" target='_blank' className='flex justify-around items-center w-full gap-2'>
                         LinkedIn <FaLinkedin size={30}/>
                     </a>
                 </li>
             </ul>
             <ul>
                 <li className='w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#161B22] '>
-                    <a href="/" className='flex justify-around items-center w-full gap-2'>
+                    <a href="https://github.com/nithinacharya11" target="_blank" className='flex justify-around items-center w-full gap-2'>
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
             </ul>
             <ul>
                 <li className='w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1A8CD8] '>
-                    <a href="/" className='flex justify-around items-center w-full gap-2'>
+                    <a href='https://twitter.com/nithin1503' target='_blank' className='flex justify-around items-center w-full gap-2'>
                         Twitter <FaTwitter size={30}/>
                     </a>
                 </li>
