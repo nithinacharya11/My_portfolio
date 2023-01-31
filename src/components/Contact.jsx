@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center' name='contact'>
+    <div className='w-full h-screen flex flex-col justify-center items-center px-2' name='contact'>
       <form method='POST' action='https://getform.io/f/3470a685-4dc2-46ba-8cc4-e03b7d9c3ed4'>
         <div className='p-3'>
             <p className='w-fit mb-2 text-2xl border-b-2 md:text-4xl font-semibold text-purple-500'>Contact</p>

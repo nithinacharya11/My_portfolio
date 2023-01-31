@@ -11,7 +11,7 @@ const Projects = () => {
     window.open(link, '_blank') 
   }
   return (
-    <div name='projects' className='flex flex-col justify-center w-full h-screen'>
+    <div name='projects' className='flex flex-col justify-center w-full h-screen px-2'>
       <div>
         <h1 className='mb-8 mt-20 text-3xl text-center font-semibold text-pink-500 underline'>Projects</h1>
       </div>
