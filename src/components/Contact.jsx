@@ -17,7 +17,7 @@ const Contact = () => {
             <button type='submit' className='bg-blue-800 w-fit mx-auto px-4 py-2 rounded hover:scale-110 duration-300'>Send</button>
         </div>
       </form>
-      <div className='mt-20 flex gap-10 md:hidden px-4'>
+      <div className='mt-20 flex gap-10 md:hidden'>
             <ul>
                 <li className='bg-[#0A66C2] p-2 rounded hover:scale-110 duration-300'>
                     <a href="https://www.linkedin.com/in/nithin-p-874361153/" target='_blank' className='flex justify-around items-center w-full gap-2'>
