@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 function App() {
 
   return (
-    <div className='p-4'>
+    <div className=''>
       <Navbar/>
       <Home/>
       <About/>

@@ -11,32 +11,32 @@ const Navbar = () => {
   }
   
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex justify-between items-center sticky top-0 md:px-20 bg-[#000300] z-11'>
         <div className='w-24'>
             <img src={Logo} alt="Logo"/>
         </div>
         <ul className='hidden md:flex gap-8 cursor-pointer'>
-            <li className='hover:scale-110 duration-300'>
+            <li className='hover:scale-110 duration-300 hover:text-green-500'>
               <Link to="home"smooth={true} duration={500}>
                Home
               </Link>
             </li>
-            <li className='hover:scale-110 duration-300'>
+            <li className='hover:scale-110 duration-300 hover:text-green-500'>
               <Link to="about"smooth={true} duration={500}>
                About
               </Link>
             </li>
-            <li className='hover:scale-110 duration-300'>
+            <li className='hover:scale-110 duration-300 hover:text-green-500'>
               <Link to="skills"smooth={true} duration={500}>
                Skills
               </Link>
             </li>
-            <li className='hover:scale-110 duration-300'>
+            <li className='hover:scale-110 duration-300 hover:text-green-500'>
               <Link to="projects"smooth={true} duration={500}>
                Projects
               </Link>
             </li>
-            <li className='hover:scale-110 duration-300'>
+            <li className='hover:scale-110 duration-300 hover:text-green-500'>
               <Link to="contact"smooth={true} duration={500}>
                Contact
               </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             </ul>
             <ul>
                 <li className='w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1A8CD8] '>
-                    <a href='https://twitter.com/nithin1503' target='_blank' className='flex justify-around items-center w-full gap-2'>
+                    <a href='https://twitter.com/nithuacharya11?t=EIXMl87pzKtfloL_doL4Ow&s=09' target='_blank' className='flex justify-around items-center w-full gap-2'>
                         Twitter <FaTwitter size={30}/>
                     </a>
                 </li>

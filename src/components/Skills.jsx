@@ -10,7 +10,7 @@ import github from '../assets/github.png'
 const Skills = () => {
   return (
     <div name="skills">
-      <div className='w-full h-screen flex flex-col justify-center md:w-[70%] mx-auto'>
+      <div className='w-full h-screen flex flex-col justify-center md:w-[70%] mx-auto z-0'>
         <div className='w-fit text-3xl font-bold mb-5  md:text-start md:text-4xl border-b-2 border-[#5A20CB] text-[#5A20CB]'>
           <h1>Skills</h1>
         </div>

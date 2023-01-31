@@ -34,7 +34,7 @@ const Contact = () => {
             </ul>
             <ul>
                 <li className=' bg-[#1A8CD8] p-2 rounded hover:scale-110 duration-300'>
-                    <a href='https://twitter.com/nithin1503' target='_blank' className='flex justify-around items-center w-full gap-2'>
+                    <a href='https://twitter.com/nithuacharya11?t=EIXMl87pzKtfloL_doL4Ow&s=09' target='_blank' className='flex justify-around items-center w-full gap-2'>
                         Twitter <FaTwitter size={20}/>
                     </a>
                 </li>
